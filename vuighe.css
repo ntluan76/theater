@@ -1,0 +1,11 @@
+
+.nav-item a:hover{
+    color: red;
+}
+.overflow-auto a{
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 25px;
+    width: 25%;
+    box-sizing: border-box;
+}

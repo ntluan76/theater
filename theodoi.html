@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheoDoi</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+</head>
+<body class="m-3" ng-app="myapp" ng-controller="myctrl">
+    <nav class=" navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="Image/logo_vuighe.png" width="150px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-auto">
+                        <a class="nav-link" aria-current="page" href="home.html"><span
+                                class="border border-2 rounded-pill p-2"><i class="fa-solid fa-house"></i> Trang
+                                Chủ</span></a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a class="nav-link " href="anime.html"><span class="border border-2 rounded-pill p-2"><i
+                                    class="fa-solid fa-palette"></i> Anime</span></a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a class="nav-link" href="#"><span class="border border-2 rounded-pill p-2"><i
+                                    class="fa-solid fa-film"></i> Movie</span></a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a class="nav-link" href="#"><span class="border border-2 rounded-pill p-2"><i
+                                    class="fa-brands fa-readme"></i> Truyện</span></a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a class="nav-link" href="#"><span class="border border-2 rounded-pill p-2"><i
+                                    class="fa-solid fa-ranking-star"></i> BXH</span></a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a class="nav-link text-danger" href="#"><span class="border border-2 rounded-pill p-2"><i
+                                    class="fa-regular fa-bell fa-beat-fade" style="color: #ed0c0c;"></i> Theo
+                                Dõi</span></a>
+                    </li>
+
+                    <li class="nav-item me-auto">
+                        <a class="nav-link" href="#"><span class="border border-2 rounded-pill p-2"><i
+                                    class="fa-brands fa-facebook"></i></span></a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <!-- Button trigger modal -->
+                        <a class="nav-link" href="#"><span class="border border-2 rounded-pill p-2"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-user"></i>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chào Khách !</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active text-danger" id="login-tab"
+                                                data-bs-toggle="tab" data-bs-target="#dangnhap-tab-pane" type="button"
+                                                role="tab" aria-controls="dangnhap-tab-pane" aria-selected="true"><i
+                                                    class="fa-solid fa-right-to-bracket" style="color: red;"></i> Đăng
+                                                Nhập</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                data-bs-target="#dangki-tab-pane" type="button" role="tab"
+                                                aria-controls="dangki-tab-pane" aria-selected="false"><i
+                                                    class="fa-solid fa-pen-nib" style="color: red;"></i></i> Đăng
+                                                kí</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="dangnhap-tab-pane" role="tabpanel"
+                                            aria-labelledby="login-tab" tabindex="0">
+                                            <div class="card">
+                                                <form name="login" class="justify-content-center">
+                                                    <div class="m-3">
+                                                        <label for="exampleInputEmail1" class="form-label"><strong>Tên
+                                                                Đăng Nhập</strong></label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon2"><i
+                                                                    class="fa-solid fa-user"></i></span>
+                                                            <input type="text" class="form-control" name="user"
+                                                                ng-model="user" minlength="6" maxlength="20" required>
+                                                        </div>
+                                                        <span class="text-danger" ng-show="login.user.$invalid"> từ 6-20
+                                                            kí tự</span>
+                                                    </div>
+                                                    <div class="m-3">
+                                                        <label for="exampleInputPassword1"
+                                                            class="form-label"><strong>Mật Khẩu</strong></label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon2"><i
+                                                                    class="fa-solid fa-lock"></i></span>
+                                                            <input type="password" class="form-control" name="pass"
+                                                                ng-model="pass"
+                                                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                                                required>
+                                                        </div>
+                                                        <span class="text-danger" ng-show="login.pass.$invalid"> Mật
+                                                            khẩu ít nhất 8 kí tự, gồm 1 chữ viết hoa và 1 chữ số</span>
+                                                    </div>
+                                                    <div class="m-3 form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">Ghi
+                                                            Nhớ</label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-danger col-lg-11 m-4">Đăng
+                                                        Nhập</button>
+                                                </form>
+                                                <div class="card-footer">
+                                                    <button type="submit" class="btn btn-danger col-lg-11 m-4">Đăng Nhập
+                                                        Bằng GOOGLE</button>
+                                                    <button type="submit" class="btn btn-primary col-lg-11 m-4">Đăng
+                                                        Nhập Bằng FACEBOOK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="dangki-tab-pane" role="tabpanel"
+                                            aria-labelledby="profile-tab" tabindex="0">
+                                            <div class="card">
+                                                <form name="signin">
+                                                    <div class="m-3">
+                                                        <label for="exampleInputTen1" class="form-label"><strong>Tên
+                                                                Đăng Nhập</strong></label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon2"><i
+                                                                    class="fa-solid fa-user"></i></span>
+                                                            <input type="text" class="form-control" name="user"
+                                                                ng-model="user" minlength="6" maxlength="20" required>
+                                                        </div>
+                                                        <span class="text-danger" ng-show="signin.user.$invalid"> từ
+                                                            6-20
+                                                            kí tự</span>
+                                                    </div>
+                                                    <div class="m-3">
+                                                        <label for="exampleInputPassword1"
+                                                            class="form-label"><strong>Mật Khẩu</strong></label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon2"><i
+                                                                    class="fa-solid fa-lock"></i></span>
+                                                            <input type="password" class="form-control" name="pass"
+                                                                ng-model="pass"
+                                                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                                                required>
+                                                        </div>
+                                                        <span class="text-danger" ng-show="signin.pass.$invalid"> Mật
+                                                            khẩu ít nhất 8 kí tự, gồm 1 chữ viết hoa và 1 chữ số</span>
+                                                    </div>
+                                                    <div class="m-3">
+                                                        <label for="exampleInputPassword1"
+                                                            class="form-label"><strong>Nhập Lại Mật
+                                                                Khẩu</strong></label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon2"><i
+                                                                    class="fa-solid fa-lock"></i></span>
+                                                            <input type="password" class="form-control" name="pass"
+                                                                ng-model="pass"
+                                                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                                                required>
+                                                        </div>
+                                                        <span class="text-danger" ng-show="signin.pass.$invalid"> Mật
+                                                            khẩu ít nhất 8 kí tự, gồm 1 chữ viết hoa và 1 chữ số</span>
+                                                    </div>
+                                                    <div class="m-3">
+                                                        <label for="exampleInputTen2" class="form-label"><strong>Tên
+                                                                Hiển Thị</strong></label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon2"><i
+                                                                    class="fa-regular fa-comment"></i></span>
+                                                            <input type="text" class="form-control" name="ten"
+                                                                ng-model="ten" minlength="6" maxlength="30" required>
+                                                        </div>
+                                                        <span class="text-danger" ng-show="signin.ten.$invalid"> từ 6-30
+                                                            kí tự</span>
+                                                    </div>
+                                                    <div class="m-3">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label"><strong>Email</strong></label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon2"><i
+                                                                    class="fa-solid fa-at"></i></i></span>
+                                                            <input type="email" class="form-control" name="email"
+                                                                ng-model="email" required>
+                                                        </div>
+                                                        <span class="text-danger" ng-show="signin.email.$invalid"> Email
+                                                            không hợp lệ</span>
+                                                    </div>
+                                                    <div class="m-3">
+                                                        <label for="exampleInputGT2" class="form-label"><strong>Giới
+                                                                Tính</strong></label>
+                                                        <div class="input-group mb-3">
+                                                            <div class="radio row">
+                                                                <label> <input class="col-6" type="radio"
+                                                                        ng-model="gioitinh" value="Nam">Nam</label>
+                                                                <label> <input class="col-6" type="radio"
+                                                                        ng-model="gioitinh" value="Nu">Nữ</label>
+                                                                <label> <input class="col-6" type="radio"
+                                                                        ng-model="gioitinh" value="Khong">Không
+                                                                    Nói</label>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-danger col-lg-11 m-4">Đăng
+                                                            Kí</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search me-auto">
+                    <input class="form-control me-3 mb-lg-0" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-lg-9 sm-12">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                        <img src="Image/bleach.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block " style="text-align: left; left: 5%;">
+                            <p>1,409,563 lượt xem</p>
+                            <h5>Sứ Mạng Thần Chết</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="Image/blackclover.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="text-align: left; left: 5%;">
+                            <p>1,409,563 lượt xem</p>
+                            <h5>BlackClover: Mahou tei no ken</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="Image/thaycung.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="text-align: left; left: 5%;">
+                            <p>2,409,563 lượt xem</p>
+                            <h5>Jujutsu Kaisen</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="Image/bungoustraydog.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="text-align: left; left: 5%;">
+                            <p>2,409,563 lượt xem</p>
+                            <h5>Bungou Stray Dogs</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="Image/maougakuin.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="text-align: left; left: 5%;">
+                            <p>2,409,563 lượt xem</p>
+                            <h5>Maou Gakuin no Futekigousha</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="Image/mashle.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="text-align: left; left: 5%;">
+                            <p>2,409,563 lượt xem</p>
+                            <h5>Mashle</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <a href="">
+                <div class="card text-bg-dark">
+                    <img src="Image/back1.jpg" class="card-img" alt="..." height="93px">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title"><i class="fa-regular fa-star"></i> Ưu Đãi</h5>
+                        <p class="card-text">Dành Cho Thành Viên</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="card text-bg-dark mt-2">
+                    <img src="Image/back2.jpg" class="card-img" alt="..." height="93px">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title"><i class="fa-solid fa-ranking-star"></i> Bảng Xếp Hạng</h5>
+                        <p class="card-text">Anime Được Xem Nhiều Nhất</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="card text-bg-dark mt-2">
+                    <img src="Image/back3.jpg" class="card-img" alt="..." height="93px">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title"><i class="fa-solid fa-cart-shopping"></i> VuiGhe Shop</h5>
+                        <p class="card-text">Mua Hàng Trên Vuighe</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <section class="ms-3">
+        <div class="mb-3 mt-5">
+            <a href="" style="text-decoration: none;">
+                <h2 style="color: red; "> Đã Theo Dõi</h2>
+            </a>
+        </div>
+        <div class="row" ng-controller="myctrl2">
+            <a href="" class="col-lg-3 col-sm-6 mb-3">
+                <div class="card text-bg-dark">
+                    <img src="{{theodoi.image}}" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title"><span class="badge bg-success">{{theodoi.trangthai}}</span></h5>
+                        <br>
+                        <br>
+                        <br>
+                        <strong class="card-text" style="background-color: rgba(20, 19, 19, 0.24);">{{theodoi.ten}}</strong>
+                        <p class="card-text" style="background-color: rgba(20, 19, 19, 0.24);"><small>{{theodoi.view}} lượt
+                                xem</small></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+
+    <script src="https://kit.fontawesome.com/460094d4fd.js" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="vuighe2.js"></script>  
+</body>
+</html>

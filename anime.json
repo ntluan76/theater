@@ -1,0 +1,214 @@
+[
+    {
+        "id": 1,
+        "image" : "Image/fairytail.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "Hội Pháp Sư",
+        "link": "fairytail.html",
+        "view": 38107516
+    },
+    {
+        "id": 2,
+        "image" : "Image/toriko.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "TORIKO",
+        "view": 5285880
+    },
+    {
+        "id": 3,
+        "image" : "Image/dragon-ball-z.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "DRAGON BALL Z",
+        "view": 31285880
+    },
+    {
+        "id": 7,
+        "image" : "Image/naruto.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "NARUTO SHIPPUDEN",
+        "view": 131285880
+    },
+    {
+        "id": 4,
+        "image" : "Image/dragon-ball-kai.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "DRAGON BALL KAI",
+        "view": 13285880
+    },
+    {
+        "id": 5,
+        "image" : "Image/dragon-ball-gt.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "DRAGON BALL GT",
+        "view": 12894567
+    },
+    {
+        "id": 6,
+        "image" : "Image/kuroko-no-basket1.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "KUROKO NO BASKET",
+        "view": 2285880
+    },
+    
+    {
+        "id": 8,
+        "image" : "Image/kimi-ni-todoke.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "KIMI NI TODOKE",
+        "view": 13285880
+    },
+    {
+        "id": 9,
+        "image" : "Image/HUNTERX2.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "HUNTER x HUNTER",
+        "view": 13285880
+    },
+    {
+        "id": 10,
+        "image" : "Image/hoshi.jpg",
+        "trangthai" : "Sắp Chiếu",
+        "ten": "HOSHIKUZU TELEPATH",
+        "view": 0
+    },
+    {
+        "id": 11,
+        "image" : "Image/kibou.jpg",
+        "trangthai" : "Sắp Chiếu",
+        "ten": "KIBOU NO CHIKARA",
+        "view": 0
+    },
+    {
+        "id": 12,
+        "image" : "Image/joushi.jpg",
+        "trangthai" : "Sắp Chiếu",
+        "ten": "ATARASHII JOUSHI WA DO TENNEN",
+        "view": 0
+    },
+    {
+        "id": 13,
+        "image" : "Image/ranga.jpg",
+        "trangthai" : "2/12",
+        "ten": "RANGA CRIMSON",
+        "view": 304567
+    },
+    {
+        "id": 14,
+        "image" : "Image/BOUSHOKU.jpg",
+        "trangthai" : "1/???",
+        "ten": "BOUSHOKU NO BERSERK ",
+        "view": 2894567
+    },
+    {
+        "id": 15,
+        "image" : "Image/KONO.jpg",
+        "trangthai" : "12/12",
+        "ten": "KONO SUBARASHII",
+        "view": 169014
+    },
+    {
+        "id": 16,
+        "image" : "Image/ARK.jpg",
+        "trangthai" : "9/12",
+        "ten": "ARKNIGHTS",
+        "view": 93452
+    },
+    {
+        "id": 17,
+        "image" : "Image/RED.jpg",
+        "trangthai" : "1/1",
+        "ten": "ONE PIECE FILM: RED",
+        "view": 2894567
+    },
+    {
+    "id": 18,
+    "image" : "Image/GOBLIN1.jpg",
+    "trangthai" : "13/24",
+    "ten": "GOBLIN SLAYER",
+    "view": 2894567
+},
+{
+    "id": 19,
+    "image" : "Image/thatrabomratmanh.jpg",
+    "trangthai" : "13/13",
+    "ten": "JITSU WA ORE, SAIKYOU DESHITA?",
+    "view": 137890
+},
+{
+    "id": 20,
+    "image" : "Image/meo.jpg",
+    "trangthai" : "12/12",
+    "ten": "DEKIRU NEKO WA KYOU",
+    "view": 14567
+},
+{
+    "id": 21,
+    "image" : "Image/thatnghiep.jpg",
+    "trangthai" : "36/48",
+    "ten": "MUSHOKU TENSEI: ISEKAI ITTARA...",
+    "view": 28954567
+},
+{
+    "id": 22,
+    "image" : "Image/thaycung2.jpg",
+    "trangthai" : "34/47",
+    "ten": "JUJUTSU KAISEN",
+    "view": 3238301
+},
+{
+    "id": 23,
+    "image" : "Image/thuebangai.jpg",
+    "trangthai" : "34/36",
+    "ten": "KANOJO, OKARISHIMASU",
+    "view": 1990120
+},
+{
+    "id": 24,
+    "image" : "Image/bun.jpg",
+    "trangthai" : "Hoàn Thành",
+    "ten": "BUNGOU STRAY DOGS",
+    "view": 3285880
+},
+{
+    "id": 25,
+    "image" : "Image/zoom1002.jpg",
+    "trangthai" : "8/12",
+    "ten": "ZOM 100: ZOMBIE NI NARU...",
+    "view": 242362
+},
+{
+    "id": 26,
+    "image" : "Image/shy.jpg",
+    "trangthai" : "1/12",
+    "ten": "SHY",
+    "view": 2362
+},
+{
+    "id": 27,
+    "image" : "Image/EDE.jpg",
+    "trangthai" : "Hoàn thành ",
+    "ten": "EDENS ZERO",
+    "view": 142362
+},
+{
+    "id": 28,
+    "image" : "Image/YOME.jpg",
+    "trangthai" : "37/??",
+    "ten": "MAHOUTSUKAI NO YOME",
+    "view": 22362
+},
+{
+    "id": 29,
+    "image" : "Image/UN.jpg",
+    "trangthai" : "1/12",
+    "ten": "UNDEAD AND UNLUCK",
+    "view": 256362
+},
+{
+    "id": 30,
+    "image" : "Image/SHANG.jpg",
+    "trangthai" : "1/12",
+    "ten": "SHANGRI-LA FRONTIER",
+    "view": 392362
+}
+]

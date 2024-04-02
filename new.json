@@ -1,0 +1,56 @@
+[{
+        "id": 1,
+        "image" : "image/maougakuin2.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "Maou Gakuin no Futekigousha",
+        "view": "2894567"
+    },
+    {
+        "id": 2,
+        "image" : "image/thatrabomratmanh.jpg",
+        "trangthai" : "13/13",
+        "ten": "JITSU WA ORE, SAIKYOU DESHITA?",
+        "view": "137890"
+    },
+    {
+        "id": 3,
+        "image" : "image/meo.jpg",
+        "trangthai" : "12/12",
+        "ten": "DEKIRU NEKO WA KYOU",
+        "view": "14567"
+    },
+    {
+        "id": 4,
+        "image" : "image/thatnghiep.jpg",
+        "trangthai" : "36/48",
+        "ten": "MUSHOKU NO TENSEI: ISEKAI ITTARA...",
+        "view": "28954567"
+    },
+    {
+        "id": 5,
+        "image" : "image/thaycung2.jpg",
+        "trangthai" : "34/47",
+        "ten": "JUJUTSU KAISEN",
+        "view": "3238301"
+    },
+    {
+        "id": 6,
+        "image" : "image/thuebangai.jpg",
+        "trangthai" : "34/36",
+        "ten": "KANOJO, OKARISHIMASU",
+        "view": "1990120"
+    },
+    {
+        "id": 7,
+        "image" : "image/bun.jpg",
+        "trangthai" : "Hoàn Thành",
+        "ten": "BUNGOU STRAY DOGS",
+        "view": "3285880"
+    },
+    {
+        "id": 8,
+        "image" : "image/zoom1002.jpg",
+        "trangthai" : "8/12",
+        "ten": "ZOM 100: ZOMBIE NI NARU...",
+        "view": "242,362"
+    }]
